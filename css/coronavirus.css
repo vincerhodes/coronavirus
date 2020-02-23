@@ -1,0 +1,128 @@
+/* fonts */
+@font-face {
+    font-family: 'action_manregular';
+    src: url('fonts/action_man/action_man-webfont.woff2') format('woff2'),
+         url('fonts/action_man/action_man-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* svg {
+    display: block;
+} */
+
+#mapContainer {
+  width: 900px;
+  height: 700px;
+}
+
+.datatable {
+  background-color: none;
+}
+
+@media only screen and (max-width : 992px) {
+
+  #mapContainer {
+    width: 450px;
+    height: 350px;
+  }
+
+  nav .brand-logo {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+}
+
+.placeholder {
+	fill: none;
+	stroke: yellow;
+	stroke-width: 2;
+	stroke-dasharray: 6;
+}
+
+body {
+	/* font-family: action_manregular, Arial, serif; */
+  font-family: Helvetica, Arial, serif;
+}
+
+h2, p {
+	margin: 10px 0;
+}
+header {
+	margin-bottom: 40px;
+}
+
+.header, .datarow {
+	color: white;
+	text-align: center;
+	margin-bottom: 0;
+	font-family: sans-serif;
+  font-size: 1.0em;
+}
+
+.vert50 {
+	margin-top: 50px;
+}
+
+.tooltip {
+	position: absolute;
+	text-align: center;
+	font: 14px sans-serif;
+	background: white;
+	border-radius: 5px;
+	pointer-events: none;
+	box-shadow: -3px 3px 15px #888;
+	padding: 10px;
+	border: 0px;
+}
+
+/* circle bar css */
+path.arc {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+path.arc:hover {
+  opacity: 0.7;
+}
+
+.axis line, .axis circle  {
+  stroke: #cccccc;
+  stroke-width: 1px;
+}
+
+.axis circle {
+  fill: none;
+}
+
+.r.axis text {
+  text-anchor: end;
+}
+
+.arcText, .title-en {
+	font-family: action_manregular, Arial, serif;
+	fill: white;
+	pointer-events: none;
+	font-size: 1.2em;
+}
+
+.title-en {
+	font-size: 0.8em;
+}
+
+.datarow {
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.datarow:hover {
+  background-color: #3ed;
+  font-size: 1.5em;
+}
+
+.btn-floating{
+  color: #3ed;
+}
